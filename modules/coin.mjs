@@ -44,7 +44,7 @@ export function coinFlips(flips) {
   }
   return x;
 }
-console.log(coinFlips(10))
+
 
 /** Count multiple flips
  * 
@@ -86,14 +86,14 @@ export function countFlips(array) {
 
 export function flipACoin(call) {
   let coin_flip = coinFlip();
-  let result;
+  let flip_result;
   if (call == coin_flip) {
-    result = "win";
+    flip_result= "win";
   } else if (call != coin_flip) {
-    result = "lose";
+    flip_result = "lose";
   }
-  let final_result = {call: call, flip: coin_flip, result: match};
-  return final;
+  let final_result = {call: call, flip: coin_flip, result: flip_result};
+  return final_result;
 }
 
 
