@@ -61,22 +61,22 @@ export function coinFlips(flips) {
  */
 
 export function countFlips(array) {
-  let heads = 0;
-  let tails = 0;
+  let h_count = 0;
+  let t_count = 0;
   for (var i = 0; i < array.length; i++) {
     if (array[i] == 'heads') {
-      heads ++;
+      h_count ++;
     } else if (array[i] == 'tails') {
-      tails ++;
+      t_count ++;
     }
   }
-  if (heads == 0) {
-    return {"tails": tails};
+  if (h_count == 0) {
+    return {"tails": t_count};
   }
-  else if (tails == 0) {
-    return {"heads": heads};
+  else if (t_count == 0) {
+    return {"heads": h_count};
   }
-  return {"heads": heads, "tails": tails};
+  return {"heads": h_count, "tails": t_count};
 
 }
   
@@ -104,4 +104,7 @@ export function flipACoin(call) {
   return {"call": call, "flip": c_flip, "result": final_result};
 }
 
-
+/** Export 
+* 
+* Export all of your named functions
+*/
