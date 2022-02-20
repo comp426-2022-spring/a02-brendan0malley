@@ -6,5 +6,5 @@ const number = args.number || 1;
 
 let flips = coinFlips(number)
 
-console.log(flips)
-console.log(countFlips(flips))
+console.log(flips);
+console.log(countFlips(flips));

@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/comp426-2022-spring/a02-brendan0malley/issues"
   },
-  "homepage": "https://github.com/comp426-2022-spring/a02-brendan0malley#readme"
+  "homepage": "https://github.com/comp426-2022-spring/a02-brendan0malley#readme",
+  "dependencies": {
+    "minimist": "^1.2.5"
+  }
 }
