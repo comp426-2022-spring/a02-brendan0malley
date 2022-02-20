@@ -40,7 +40,8 @@ function coinFlip() {
 function coinFlips(flips) {
   let x = [];
   for (let i = 0; i < flips; i++){
-    x.push(coinFlip());
+    let flip = coinFlip();
+    x[i] = flip;
   }
   return x;
 }
@@ -60,20 +61,22 @@ function coinFlips(flips) {
  */
 
 function countFlips(array) {
-  var final_count = {heads: 0, tails: 0}
-
-  for (const result of array){
-    if (result == "heads"){
-      final_count.heads += 1;
-    }
-    else if (result == "tails"){
-      final_count.tails += 1;
-    }
-    else{
-      console.error("Not valid");
+  let h_count = 0;
+  let t_count = 0;
+  for (var i = 0; i < array.length; i++) {
+    if (array[i] == 'heads') {
+      h_count ++;
+    } else if (array[i] == 'tails') {
+      t_count ++;
     }
   }
-  return final_count;
+  if (h_count == 0) {
+    return {"tails": t_count};
+  }
+  else if (t_count == 0) {
+    return {"heads": h_count};
+  }
+  return {"heads": h_count, "tails": t_count};
 }
   
 
