@@ -61,15 +61,22 @@ function coinFlips(flips) {
  */
 
 function countFlips(array) {
-  let result = {heads: 0, tails: 0}
+  let h_count = 0;
+  let t_count = 0;
+
   for (var i = 0; i < array.length; i++){
-    if (array[i] == "heads"){
-      result.heads =  result.heads + 1
-    } else {
-      result.tails = result.taisl + 1
+    if (array[i] == 'heads'){
+      h_count ++;
+    }else if (array[i] == 'tails'){
+      t_count ++;
     }
+    }
+  if (h_count == 0){
+    return {"tails": t_count};
+  }else if (t_count = 0){
+    return {"heads": h_count};
   }
-  return result;
+  return {"heads": h_count, "tails": t_count};
 }
   
 
