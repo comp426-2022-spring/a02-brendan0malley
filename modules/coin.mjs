@@ -64,9 +64,9 @@ function countFlips(array) {
   let result = {heads: 0, tails: 0}
   for (var i = 0; i < array.length; i++){
     if (array[i] == "heads"){
-      result.heads += 1
+      result.heads =  result.heads + 1
     } else {
-      result.tails += 1
+      result.tails = result.taisl + 1
     }
   }
   return result;
