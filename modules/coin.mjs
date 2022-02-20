@@ -14,7 +14,7 @@
  * 
  */
 
-export function coinFlip() {
+ export function coinFlip() {
   return(Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails';
 }
 
@@ -77,7 +77,6 @@ export function countFlips(array) {
     return {"heads": h_count};
   }
   return {"heads": h_count, "tails": t_count};
-
 }
   
 
@@ -104,7 +103,8 @@ export function flipACoin(call) {
   return {"call": call, "flip": c_flip, "result": final_result};
 }
 
+
 /** Export 
-* 
-* Export all of your named functions
+ * 
+ * Export all of your named functions
 */
