@@ -90,14 +90,9 @@ function countFlips(array) {
  */
 
 function flipACoin(call) {
-  let coin_flip = coinFlip();
-  let flip_result = "";
-  if (coin_flip == call){
-    match = "win";
-  }else if(coin_flip != call){
-    match = "lose";
-  }
-  return {"call": call, "flip": coin_flip, "result": match};
+  var final_result = {call: call, flip: coinFlip(), outcome: null}
+  final_result.outcome = final_result.flip == final_result.call ? "win" : "lose";
+  return final_result;
 }
 
 
