@@ -63,17 +63,17 @@ export function coinFlips(flips) {
 export function countFlips(array) {
   let h_count = 0;
   let t_count = 0;
-
-  for (var i = 0; i < array.length; i++){
-    if (array[i] == 'heads'){
+  for (var i = 0; i < array.length; i++) {
+    if (array[i] == 'heads') {
       h_count ++;
-    }else if (array[i] == 'tails'){
+    } else if (array[i] == 'tails') {
       t_count ++;
     }
   }
-  if (h_count == 0){
+  if (h_count == 0) {
     return {"tails": t_count};
-  }else if (t_count = 0){
+  }
+  else if (t_count == 0) {
     return {"heads": h_count};
   }
   return {"heads": h_count, "tails": t_count};
